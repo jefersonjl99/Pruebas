@@ -18,5 +18,4 @@ for i in s:
 out += str(cont)+" "
 out1 += n+" "
 print(out1+"\n"+out)
-print("no hay risa")
-print ("JAHAHHAHA")
+
