@@ -11,11 +11,6 @@ def tipos_lamina(laminas):
     # "escudos", "equipos", "iconos", "estrellas", o “normales”.
 
 
-prueba = ['escudo', 'escudo', 'equipo', 'normal', 'normal',
-          'estrella', 'icono', 'normal', 'normal', 'equipo']
-print(tipos_lamina(prueba))
-
-
 def laminas_faltantes_tipo(laminasFaltantes, tiposLamina, tipoLamina):
     numeroLaminaFaltante = []
     for i in laminasFaltantes:
@@ -24,31 +19,12 @@ def laminas_faltantes_tipo(laminasFaltantes, tiposLamina, tipoLamina):
     return numeroLaminaFaltante
 
 
-prueba = [1, 3, 6, 8]
-prueba0 = ['escudo', 'escudo', 'equipo', 'normal', 'normal',
-           'estrella', 'icono', 'normal', 'normal', 'equipo']
-prueba1 = 'normal'
-print(laminas_faltantes_tipo(prueba, prueba0, prueba1))
-
-
-prueba = [1, 3, 6, 8]
-prueba0 = ['escudo', 'escudo', 'equipo', 'normal', 'normal',
-           'estrella', 'icono', 'normal', 'normal', 'equipo']
-prueba1 = 'escudo'
-print(laminas_faltantes_tipo(prueba, prueba0, prueba1))
-
-
 def me_faltan(listaAjena, miLista):
     listaCambios = []
     for i in listaAjena:
         if i not in miLista:
             listaCambios.append(i)
     return listaCambios
-
-
-prueba = [3, 5, 7, 10, 15, 16]
-prueba1 = [4, 10, 5, 8]
-print(me_faltan(prueba, prueba1))
 
 
 def cambiar(listaAjena, miLista):
@@ -67,8 +43,3 @@ def cambiar(listaAjena, miLista):
     else:
         r = numeroCambiosMios
     return r
-
-
-prueba = [3, 5, 7, 10, 15, 16]
-prueba1 = [4, 10, 5, 8]
-print(cambiar(prueba, prueba1))
