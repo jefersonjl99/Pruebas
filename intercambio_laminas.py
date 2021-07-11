@@ -5,10 +5,12 @@ plural_laminas = {'escudo': 'escudos', 'equipo': 'equipos',
 def tipos_lamina(laminas):
     tipos_laminas = []
     for i in laminas:
-        if plural_laminas.get(i) not in tipos_laminas:
-            tipos_laminas.append(plural_laminas.get(i))
+        if i in plural_laminas:
+            if plural_laminas.get(i) not in tipos_laminas:
+                tipos_laminas.append(plural_laminas.get(i))
+        elif i not in tipos_laminas:
+            tipos_laminas.append(i)
     return tipos_laminas
-    # "escudos", "equipos", "iconos", "estrellas", o “normales”.
 
 
 prueba = ['escudo', 'escudo', 'equipo', 'normal', 'normal',
